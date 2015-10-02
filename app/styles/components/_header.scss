@@ -1,0 +1,81 @@
+#logo {
+  width: 2em;
+  height: 2em;
+  vertical-align: bottom;
+}
+.header__wrapper{
+  background-color: $header-background;
+  border-bottom: 0.5em solid $header-border;
+  @include clearfix();
+  @include omega();
+}
+.header{
+  @include outer-container();
+  @include pad(0 1em);
+}
+.sticky{
+  left: 0;
+  right: 0;
+}
+.header__title {
+  display: inline-block;
+  vertical-align: top;
+  width: 1em;
+  margin-left: 0.5em;
+  margin-bottom: 0;
+}
+.header__nav{
+  float: right;
+}
+.header__nav-item{
+  display: inline-block;
+  margin-right: 0.5em;
+  &:last-of-type{
+    margin-right: 0;
+  }
+  > a {
+    display: inline-block;
+    height: 3em;
+    line-height: 2em;
+    padding: 0.5em 0.25em;
+  }
+  .active{
+    background-color: lightgray;
+    border-top: $aqua 1px solid;
+    font-weight: 600;
+    height: calc(3em + 1px);
+    // Try slide animation
+  }
+}
+[style*="position: static"] [href="#home"]{
+  background-color: lightgray !important;
+  font-weight: 600;
+  border-top: $aqua 1px solid;
+  height: calc(3em + 1px);
+}
+
+@include media($medium-screen-up){
+  #logo {
+    width: 3em;
+    height: 3em;
+    vertical-align: middle;
+  }
+  .header__nav-item{
+    margin-right: 1em;
+    > a {
+      padding: 0.5em;
+    }
+  }
+  .header__title{
+    margin-top: 0.25em;
+  }
+}
+
+@include media($large-screen-up) {
+  .header {
+    @include pad(0);
+  }
+  #logo{
+    // height: 3.5em;
+  }
+}
