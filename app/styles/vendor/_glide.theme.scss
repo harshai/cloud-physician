@@ -84,7 +84,7 @@
   vertical-align: middle;
 }
 .glide__bullets > *.active {
-  background-color: white;
+  background-color: #EDEDED;
 }
 .glide__bullets > *:focus {
   outline: none;
@@ -121,5 +121,5 @@
 
 }
 .glide {
-  height: 95vh;
+  // height: 100vh;
 }

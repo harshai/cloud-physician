@@ -6,48 +6,8 @@ html
     link(rel="stylesheet", type="text/css", href="styles/app.css")
   body
     main
-      .header__wrapper
-        header.header
-          img#logo(src="../assets/logo.svg" alt="Cloud Physician Logo")
-          h1.header__title cloud physician
-          nav.header__nav
-            ul.header__nav-list
-              li.header__nav-item
-                a.active(href="#home") Home
-              li.header__nav-item
-                a(href="#about-us") About
-              li.header__nav-item
-                a(href="#contact") Contact us
-      section#home.scrollto.section
-        #glide.glide
-          .glide__wrapper
-            ul.glide__track
-              li.glide__slide
-                img(src='https://unsplash.it/1088/900/?random')
-                .glide__text lorempixel lorempixel
-              li.glide__slide
-                img(src='http://lorempixel.com/1088/900')
-                .glide__text lorempixel lorempixel
-              li.glide__slide
-                img(src='http://placehold.it/1088x900')
-                .glide__text lorempixel lorempixel
-          .glide__bullets
-
-      section#about-us.scrollto.section
-        h1 About us Section. WIP
-      section#contact.scrollto.section
-        h1 WIP
-        a(href="linkto: dileepraman@gmail.com") dileepraman@gmail.com
-    //- script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js")
-    //- script.
-    //-   window.Zepto || document.write('<script type="text/javascript" src="js/vender/zepto.min.js"><\/script>');
-    //-   jQuery = Zepto;
-
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
-    script.
-        window.jQuery || document.write('<script type="text/javascript" src="js/vendor/jquery.min.js"><\/script>');
-    script(src="//cdn.jsdelivr.net/stickynavbar.js/1.1.2/jquery.stickyNavbar.min.js")
-    script.
-        $.fn.stickyNavbar || document.write('<script type="text/javascript" src="js/vendor/jquery.stickyNavbar.min.js"><\/script>');
-    script(src="js/vendor/glide.js" type="text/javascript")
-    script(type="text/javascript", src="js/app.js")
+      include partials/_header
+      include partials/_home
+      include partials/_about-us
+      include partials/_contact
+      include partials/_scripts

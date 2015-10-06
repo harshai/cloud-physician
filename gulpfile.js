@@ -77,7 +77,7 @@ gulp.task('watch', function() {
   gulp.watch('app/styles/**/*', ['css']);
   gulp.watch('app/js/*.js', ['js']);
   gulp.watch('app/assets/*', ['assets']);
-  gulp.watch('app/*.jade', ['html']);
+  gulp.watch('app/**/*.jade', ['html']);
   watch('./build/**/*').pipe(connect.reload());
 });
 
