@@ -621,8 +621,8 @@ html {
   box-sizing: inherit; }
 
 #logo {
-  width: 2em;
-  height: 2em;
+  width: 7em;
+  height: 3em;
   vertical-align: bottom; }
 
 .header__wrapper {
@@ -682,8 +682,6 @@ html {
 
 @media screen and (min-width: 600px) {
   #logo {
-    width: 3em;
-    height: 3em;
     vertical-align: middle; }
   .header__nav-item {
     margin-right: 1em; }
@@ -706,6 +704,18 @@ html {
     clear: both;
     content: "";
     display: table; }
+  .section::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.profile {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .profile:last-child {
+    margin-right: 0; }
 
 .glide--vertical .glide__arrows {
   left: 50%;
@@ -792,7 +802,7 @@ html {
   vertical-align: middle; }
 
 .glide__bullets > *.active {
-  background-color: white; }
+  background-color: #EDEDED; }
 
 .glide__bullets > *:focus {
   outline: none; }
@@ -825,6 +835,3 @@ html {
   vertical-align: middle;
   line-height: 10;
   font-size: 1.5em; }
-
-.glide {
-  height: 95vh; }
